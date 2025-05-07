@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SINGO - De stad's bingo</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="Landingspagina.js"></script>
+  </head>
+
+  <body class="bg-[#1A3E47] relative">
+    <div class="min-h-screen flex flex-col w-full max-w-md mx-auto px-4">
+      <header class="text-center mt-8">
+        <h1 class="text-white text-8xl font-bold tracking-wider">SINGO</h1>
+        <div class="relative">
+          <h2 class="text-white text-3xl">De stad's bingo</h2>
+        </div>
+      </header>
+      <main class="flex-grow flex flex-col justify-center items-center">
+        <div class="w-full max-w-xs bg-white rounded-md p-8 shadow-lg">
+          <div id="admin-login" class="login-form">
+            <form class="space-y-6">
+              <div class="space-y-2">
+                <label for="admin-username" class="text-gray-800 font-medium">
+                  Gebruikersnaam
+                </label>
+                <input
+                  id="admin-username"
+                  type="text"
+                  class="w-full border border-gray-300 rounded px-4 py-2"
+                  placeholder="Admin"
+                />
+              </div>
+              <div class="space-y-2">
+                <label for="admin-password" class="text-gray-800 font-medium">
+                  Wachtwoord
+                </label>
+                <input
+                  id="admin-password"
+                  type="password"
+                  class="w-full border border-gray-300 rounded px-4 py-2"
+                  placeholder="********"
+                />
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-2 rounded-md transition-colors"
+              >
+                Log in
+              </button>
+            </form>
+          </div>
+
+          <div id="student-login" class="login-form" style="display: none">
+            <form class="space-y-6">
+              <div class="space-y-2">
+                <label for="student-teamname" class="text-gray-800 font-medium">
+                  Teamnaam
+                </label>
+                <input
+                  id="student-teamname"
+                  type="text"
+                  required
+                  class="w-full border border-gray-300 rounded px-4 py-2"
+                  placeholder="Voer je team naam in"
+                />
+              </div>
+              <div class="space-y-2">
+                <label for="student-pin" class="text-gray-800 font-medium">
+                  Bingo-PIN
+                </label>
+                <input
+                  id="student-pin"
+                  type="password"
+                  inputmode="numeric"
+                  required
+                  class="w-full border border-gray-300 rounded px-4 py-2"
+                  placeholder="Enter PIN"
+                />
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-2 rounded transition-colors"
+              >
+                Start
+              </button>
+            </form>
+          </div>
+
+          <div class="mt-4 text-center">
+            <a href="#" id="switch-link">Speel als student</a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="absolute bottom-4 text-center w-full">
+      <p class="text-white text-sm">Medemogelijk gemaakt door Noorderpoort</p>
+    </footer>
+
+    <script src="Landingspagina.js"></script>
+  </body>
+</html>
