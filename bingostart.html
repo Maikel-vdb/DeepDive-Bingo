@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./src/output.css">
+  <script src="https://kit.fontawesome.com/4e327e659e.js" crossorigin="anonymous"></script>
+  <script src="bingostart.js"></script>
+</head>
+<body>
+  <div class="container p-4 md:p-0 pb-40">
+    <div class="mb-6" id="top">
+      <h1 class="text-3xl font-semibold">NP - Stadsbingo</h1>
+      <p class="text-gray-500 font-light">2025 | Noorderpoort</p>
+    </div>
+    <img class="rounded-xl" src="https://architectenweb.nl/media/illustrations/2018/10/46b00f8c-2312-421c-8319-c49978d02fbd_400.jpg" alt="">
+    <div class="flex justify-between mt-6">
+      <h2 class="text-xl font-medium">1. Martininplaza</h2>
+      <div class="bg-[#DFF5E1] text-[#2E7D32] px-6 text-sm rounded-lg">Goedgekeurd</div>
+    </div>
+    <p>Locatie:<span class="text-[#EF4E31]">6H85+2R, Groningen</span></p>
+    <div class="relative bg-[#EFDDCF] mt-4 p-4 rounded-xl">
+      <img class="absolute -top-2 -left-2" src="./icons/info.png" alt="">
+      <h3 class="text-[#2A505B] font-semibold text-lg">Origamiboot</h3>
+      <p>Kies uit de groep 1 speler die de opdracht gaat uitvoeren. haal uit de envelop het gekleurde papier en volg het volgende filmpje: LINK. Stuur een foto waarin jullie verbaasd zijn over het eindresultaat</p>
+      
+      <img class="object-fill" id="output"/>
+      <div class="">
+        <div>
+          <label class="p-2 flex justify-center w-full text-sm bg-[#2A505B] rounded-lg cursor-pointer text-white mt-4" for="file_input"><i class="fa-solid fa-arrow-up-from-bracket mr-4 text-base"></i>Bestand uploaden</label>
+          <input id="file_input" type="file" accept="image/" onchange="loadFile(event)">
+        </div>
+          <button hidden class="p-2 flex justify-center w-full text-sm bg-[#EF4E31] rounded-lg cursor-pointer text-white mt-4" type="submit" id="inleveren">Inleveren</button>
+      </div>
+    </div>
+    <div class="flex justify-between mt-4">
+      <a href="#" class="flex items-center justify-center px-3 h-8 me-3 text-sm font-medium">
+        <i class="mr-2 fa-solid fa-arrow-left"></i>
+        Previous
+      </a>
+      <!-- Ga naar de vorige pagina en haal de vorige opdracht op vanuit de database -->
+      <a href="#" class="flex items-center justify-center px-3 h-8 text-sm font-medium">
+        Next
+        <i class="ml-2 fa-solid fa-arrow-right"></i>
+      </a>
+      <!-- Ga naar volgende pagina en haal de volgende opdracht op vanuit de database -->
+    </div>
+  </div>
+  <footer class="fixed bottom-0 w-full bg-[#2c4a52] rounded-t-2xl text-white md:hidden">
+    <div class="flex justify-around items-center py-4">
+      <div class="flex flex-col items-center ml-8 opacity-20">
+        <i class="fa-solid fa-house"></i>
+        <span class="text-sm mt-1">Home</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <i class="fa-regular fa-pen-to-square"></i>
+        <span class="text-sm mt-1">Bingo</span>
+      </div>
+
+      <div class="flex flex-col items-center mr-8 opacity-20">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <span class="text-sm mt-1">Route</span>
+      </div>
+    </div>
+  </footer> 
+</body>
+</html>
