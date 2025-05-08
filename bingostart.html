@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./src/output.css">
   <script src="https://kit.fontawesome.com/4e327e659e.js" crossorigin="anonymous"></script>
-  <script src="bingostart.js"></script>
+  <script defer src="bingostart.js"></script>
 </head>
 <body>
   <div class="container p-4 md:p-0 pb-40">
@@ -15,16 +15,21 @@
       <h1 class="text-3xl font-semibold">NP - Stadsbingo</h1>
       <p class="text-gray-500 font-light">2025 | Noorderpoort</p>
     </div>
-    <img class="rounded-xl" src="https://architectenweb.nl/media/illustrations/2018/10/46b00f8c-2312-421c-8319-c49978d02fbd_400.jpg" alt="">
+    <!-- afbeelding -->
+    <img id="afbeelding" class="rounded-xl" src="https://architectenweb.nl/media/illustrations/2018/10/46b00f8c-2312-421c-8319-c49978d02fbd_400.jpg" alt="">
     <div class="flex justify-between mt-6">
-      <h2 class="text-xl font-medium">1. Martininplaza</h2>
-      <div class="bg-[#DFF5E1] text-[#2E7D32] px-6 text-sm rounded-lg">Goedgekeurd</div>
+      <!-- titel -->
+      <h2 id="titel" class="text-xl font-medium">1. Martininplaza</h2>
+      <div class="bg-[#E0E0E0] text-[#858585] px-6 text-sm rounded-lg">In afwachting</div>
     </div>
-    <p>Locatie:<span class="text-[#EF4E31]">6H85+2R, Groningen</span></p>
+    <!-- locatie -->
+    <p>Locatie:<span id="locatie" class="text-[#EF4E31]">6H85+2R, Groningen</span></p>
     <div class="relative bg-[#EFDDCF] mt-4 p-4 rounded-xl">
       <img class="absolute -top-2 -left-2" src="./icons/info.png" alt="">
-      <h3 class="text-[#2A505B] font-semibold text-lg">Origamiboot</h3>
-      <p>Kies uit de groep 1 speler die de opdracht gaat uitvoeren. haal uit de envelop het gekleurde papier en volg het volgende filmpje: LINK. Stuur een foto waarin jullie verbaasd zijn over het eindresultaat</p>
+      <!-- oprdacht titel -->
+      <h3 id="opdrachttitel" class="text-[#2A505B] font-semibold text-lg">Origamiboot</h3>
+      <!-- opdracht beschrijving -->
+      <p id="opdrachtbeschrijving">Kies uit de groep 1 speler die de opdracht gaat uitvoeren. haal uit de envelop het gekleurde papier en volg het volgende filmpje: LINK. Stuur een foto waarin jullie verbaasd zijn over het eindresultaat</p>
       
       <img class="object-fill" id="output"/>
       <div class="">
@@ -37,11 +42,11 @@
     </div>
     <div class="flex justify-between mt-4">
       <a href="#" class="flex items-center justify-center px-3 h-8 me-3 text-sm font-medium">
-        <i class="mr-2 fa-solid fa-arrow-left"></i>
+        <i id="previousPage" class="mr-2 fa-solid fa-arrow-left"></i>
         Previous
       </a>
       <!-- Ga naar de vorige pagina en haal de vorige opdracht op vanuit de database -->
-      <a href="#" class="flex items-center justify-center px-3 h-8 text-sm font-medium">
+      <a id="nextPage" href="#" class="flex items-center justify-center px-3 h-8 text-sm font-medium">
         Next
         <i class="ml-2 fa-solid fa-arrow-right"></i>
       </a>
