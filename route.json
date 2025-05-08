@@ -1,0 +1,38 @@
+ 
+[
+    {
+        "titel": "1. Grotemarkt",
+        "afbeelding": "https://architectenweb.nl/media/illustrations/2024/06/ed3d8884-6818-4f98-b5ff-8d1c6c5ac709_400.jpg",
+        "locatie": "6H85+2R Groningen",
+        "opdrachttitel": "Martinitoren",
+        "opdrachtbeschrijving": "Maak een creatieve foto van de Martinitoren. Gebruik een grappig perspectief of pose."
+    },
+    {
+        "titel": "2. Noorderplantsoen",
+        "afbeelding": "https://discovergroningen.com/wp-content/uploads/2020/05/Noorderplantsoen-scaled.jpg ",
+        "locatie": "6H85+F4 Groningen",
+        "opdrachttitel": "Groepsfoto!",
+        "opdrachtbeschrijving": "Maak een groepsfoto waarbij jullie samen een boom of dier nadoen."
+    }, 
+    {
+        "titel": "3. A-Kerkhof",
+        "afbeelding": "https://media.indebuurt.nl/groningen/2021/12/17155114/Schermafbeelding-2021-12-17-om-15.50.31.jpg",
+        "locatie": "6H84+QV Groningen",
+        "opdrachttitel": "Recht voor de kerk",
+        "opdrachtbeschrijving": "Maak een symetrische foto van de kerk, met de toren in het midden van het beeld"
+    }, 
+    {
+        "titel": "4. Groninger Museum",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Groningermuseum.JPG",
+        "locatie": "6H74+x7 Groningen",
+        "opdrachttitel": "Spiegel aan de wand",
+        "opdrachtbeschrijving": "Maak een foto van het museum met zijn reflectie in het water."
+    },
+    {
+        "titel": "5. Hoofdstation",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/20080430_Hoofdstation_Groningen_NL.jpg/1200px-20080430_Hoofdstation_Groningen_NL.jpg",
+        "locatie": "6H74+R3 Groningen",
+        "opdrachttitel": "Het station",
+        "opdrachtbeschrijving": "Maak een groepsfoto op het hoofdstation met het station op de achtergrond"
+    }
+] 
